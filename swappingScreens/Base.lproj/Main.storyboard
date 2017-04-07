@@ -111,13 +111,21 @@
                                     <color key="titleColor" red="0.06463497338301516" green="0.087605843797738503" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="jlV-1L-xQ2"/>
+                                    <action selector="backButtonPressed:" destination="X0c-TP-yc0" eventType="touchUpInside" id="6By-oV-v8v"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rw2-AK-kbC">
+                                <rect key="frame" x="73" y="240" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.95158094387853565" green="1" blue="0.97816990077985955" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Third screen"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="doT-FJ-SMt" firstAttribute="leading" secondItem="39v-aT-Pe3" secondAttribute="leadingMargin" constant="10" id="7lB-kr-96f"/>
+                            <constraint firstItem="rw2-AK-kbC" firstAttribute="centerX" secondItem="39v-aT-Pe3" secondAttribute="centerX" id="SMx-wS-9qJ"/>
+                            <constraint firstItem="IHw-aC-rmC" firstAttribute="top" secondItem="rw2-AK-kbC" secondAttribute="bottom" constant="298" id="TgS-jc-ay7"/>
+                            <constraint firstItem="rw2-AK-kbC" firstAttribute="leading" secondItem="39v-aT-Pe3" secondAttribute="leadingMargin" constant="57" id="UZm-GL-cak"/>
                             <constraint firstItem="doT-FJ-SMt" firstAttribute="top" secondItem="vKz-jq-uYP" secondAttribute="bottom" constant="10" id="aiY-ZO-JhZ"/>
                         </constraints>
                     </view>

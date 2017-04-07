@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="843.75" y="36.971830985915496"/>
         </scene>
-        <!--View Controller-->
+        <!--Play SongVC-->
         <scene sceneID="BO4-b2-09R">
             <objects>
-                <viewController id="Rb9-SH-pnf" sceneMemberID="viewController">
+                <viewController id="Rb9-SH-pnf" customClass="playSongVC" customModule="swappingScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ekr-hj-WI2"/>
                         <viewControllerLayoutGuide type="bottom" id="Mh3-Fr-FQI"/>

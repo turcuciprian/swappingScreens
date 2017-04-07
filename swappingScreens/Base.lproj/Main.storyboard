@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,6 +60,9 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" red="0.012654331209125846" green="0.15930452604802758" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="X0c-TP-yc0" kind="show" id="QIh-h3-Pa6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -84,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Music ListVC-->
         <scene sceneID="VQV-JT-bmj">
             <objects>
-                <viewController id="X0c-TP-yc0" sceneMemberID="viewController">
+                <viewController id="X0c-TP-yc0" customClass="MusicListVC" customModule="swappingScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vKz-jq-uYP"/>
                         <viewControllerLayoutGuide type="bottom" id="IHw-aC-rmC"/>
@@ -95,12 +99,32 @@
                     <view key="view" contentMode="scaleToFill" id="39v-aT-Pe3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doT-FJ-SMt">
+                                <rect key="frame" x="26" y="30" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.96157342456045602" green="0.98688638939092044" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UW9-2b-anZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="XR7-jT-y0p"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.06463497338301516" green="0.087605843797738503" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jlV-1L-xQ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="doT-FJ-SMt" firstAttribute="leading" secondItem="39v-aT-Pe3" secondAttribute="leadingMargin" constant="10" id="7lB-kr-96f"/>
+                            <constraint firstItem="doT-FJ-SMt" firstAttribute="top" secondItem="vKz-jq-uYP" secondAttribute="bottom" constant="10" id="aiY-ZO-JhZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUi-Rj-wRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="38"/>
+            <point key="canvasLocation" x="843.75" y="36.971830985915496"/>
         </scene>
     </scenes>
 </document>
